@@ -1,73 +1,105 @@
 <style>
   a{
-    color:red
+    color:white;
   }
-  h3{
-    color:red;
+  h5{
+    color : red;
   }
-</style>
-
-<footer class="footer" [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
+  </style>
   
   
-  <div class="container">
-    <div class="row row-grid align-items-center" [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
-      <div class="col-lg-12">
-        <h3 class="text-danger font-weight-light mb-2" style = "color:red">Quick Links</h3>
-       
-      </div>
-      <div class="col-lg-12">
-        <ul class="nav nav-footer justify-content-end">
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >Life Certificate Form</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >Government Accounting Rules</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >General Financial Rules</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >Life Certificate Form</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >Government Accounting Rules</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >General Financial Rules</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
-          </li>
-        </ul>
-      </div>
-         </div>
-    <hr>
-    <div class="row align-items-center justify-content-md-between">
-      <div class="col-md-6">
-        <div class="copyright">
-          COPYRIGHT © 2012 FRED.COM. ALL RIGHTS RESERVED. DESIGN BY INFORMATION TECHNOLOGY DEPARTMENT , GOVERNMENT OF SIKKIM.
+  <!-- Footer -->
+  <footer class="page-footer font-small blue pt-4" style="background-color: #212529">
+  
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+  
+        <!-- Grid row -->
+        <div class="row">
+  
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+  
+            <!-- Content -->
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>Here you can use rows and columns here to organize your footer content.</p>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <hr class="clearfix w-100 d-md-none pb-3">
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+              <!-- Links -->
+              <h5 class="text-uppercase">Quick Links</h5>
+  
+              <ul class="list-unstyled">
+               <li >
+              <a [routerLink]="['/home']" class="nav-link" >Life Certificate Form</a>
+            </li>
+            <li>
+              <a [routerLink]="['/home']" class="nav-link" >Government Accounting Rules</a>
+            </li>
+            <li>
+              <a [routerLink]="['/home']" class="nav-link" >General Financial Rules</a>
+            </li>
+            <li>
+              <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
+            </li>
+            <li>
+              <a [routerLink]="['/home']" class="nav-link" >Life Certificate Form</a>
+            </li>
+            <li>
+              <a [routerLink]="['/home']" class="nav-link" >Government Accounting Rules</a>
+            </li>
+            <li>
+              <a [routerLink]="['/home']" class="nav-link" >General Financial Rules</a>
+            </li>
+            <li>
+              <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
+            </li>
+              </ul>
+  
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+  
+              <!-- Links -->
+              <h5 class="text-uppercase">Useful Links</h5>
+  
+              <ul class="list-unstyled">
+                  <li>
+              <a [routerLink]="['/home']" class="nav-link" >Home</a>
+            </li>
+            <li>
+              <a [routerLink]="['/home']" class="nav-link" >Sitemap</a>
+            </li>
+            <li>
+              <a [routerLink]="['/home']" class="nav-link" >Help</a>
+            </li>
+            <li>
+              <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
+            </li>
+              </ul>
+  
+            </div>
+            <!-- Grid column -->
+  
         </div>
+        <!-- Grid row -->
+  
       </div>
-      <div class="col-md-6">
-        <ul class="nav nav-footer justify-content-end">
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >Home</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >Sitemap</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link" >Help</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
-          </li>
-        </ul>
+      <!-- Footer Links -->
+  
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        <a [routerLink]="['/home']" >   COPYRIGHT © 2012 FRED.COM. ALL RIGHTS RESERVED. DESIGN BY INFORMATION TECHNOLOGY DEPARTMENT , GOVERNMENT OF SIKKIM.</a>
       </div>
-    </div>
-  </div>
-</footer>
+      <!-- Copyright -->
+  
+    </footer>
+    <!-- Footer -->
