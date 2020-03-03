@@ -1,0 +1,73 @@
+<style>
+  a{
+    color:red
+  }
+  h3{
+    color:red;
+  }
+</style>
+
+<footer class="footer" [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
+  
+  
+  <div class="container">
+    <div class="row row-grid align-items-center" [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
+      <div class="col-lg-12">
+        <h3 class="text-danger font-weight-light mb-2" style = "color:red">Quick Links</h3>
+       
+      </div>
+      <div class="col-lg-12">
+        <ul class="nav nav-footer justify-content-end">
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >Life Certificate Form</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >Government Accounting Rules</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >General Financial Rules</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >Life Certificate Form</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >Government Accounting Rules</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >General Financial Rules</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
+          </li>
+        </ul>
+      </div>
+         </div>
+    <hr>
+    <div class="row align-items-center justify-content-md-between">
+      <div class="col-md-6">
+        <div class="copyright">
+          COPYRIGHT © 2012 FRED.COM. ALL RIGHTS RESERVED. DESIGN BY INFORMATION TECHNOLOGY DEPARTMENT , GOVERNMENT OF SIKKIM.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-footer justify-content-end">
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >Sitemap</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link" >Help</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/feedback']" class="nav-link" >Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
