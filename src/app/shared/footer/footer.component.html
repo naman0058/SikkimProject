@@ -9,7 +9,7 @@
   
   
   <!-- Footer -->
-  <footer class="page-footer font-small blue pt-4" style="background-color: #212529">
+  <footer class="page-footer font-small blue pt-4" style="background-color: #212529;padding:0px;margin:0px">
   
       <!-- Footer Links -->
       <div class="container-fluid text-center text-md-left">
@@ -18,11 +18,24 @@
         <div class="row">
   
           <!-- Grid column -->
-          <div class="col-md-6 mt-md-0 mt-3">
+          <div class="col-md-4 mt-md-0 mt-3">
   
-            <!-- Content -->
-            <h5 class="text-uppercase">Footer Content</h5>
-            <p>Here you can use rows and columns here to organize your footer content.</p>
+            <!-- Links -->
+            <h5 class="text-uppercase">Departments</h5>
+  
+            <ul class="list-unstyled">
+             <li >
+            <a [routerLink]="['/home']" class="nav-link" >Department of Financial Services</a>
+          </li>
+          <li>
+            <a [routerLink]="['/home']" class="nav-link" >Department of Revenue</a>
+          </li>
+          <li>
+            <a [routerLink]="['/home']" class="nav-link" >Department of Investment and Public Asset Managment</a>
+          </li>
+        
+            </ul>
+
   
           </div>
           <!-- Grid column -->
@@ -30,7 +43,7 @@
           <hr class="clearfix w-100 d-md-none pb-3">
   
           <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
+          <div class="col-md-4 mb-md-0 mb-3">
   
               <!-- Links -->
               <h5 class="text-uppercase">Quick Links</h5>
@@ -66,7 +79,7 @@
             <!-- Grid column -->
   
             <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
+            <div class="col-md-4 mb-md-0 mb-3">
   
               <!-- Links -->
               <h5 class="text-uppercase">Useful Links</h5>

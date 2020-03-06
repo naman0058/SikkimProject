@@ -1,126 +1,147 @@
-<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark headroom headroom--top headroom--pinned">
-  <div class="container">
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
-     Home
-    </a>
-    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
-      <div class="navbar-collapse-header">
-        <div class="row">
-          <div class="col-6 collapse-brand">
-            <a [routerLink]="['/home']">
-              Home
-            </a>
+<!-- <nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand">भारत सरकार | GOVERNMENT OF INDIA</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav> -->
+
+
+  <nav class="navbar navbar-light" style="background-color: black;">
+      <a class="navbar-brand" href="#">
+        <img src="http://sikkimfred.gov.in/images/BannerFREDWhite1.png" style="width:100%; height:80px"  alt=""/>
+      
+      </a>
+    </nav>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light "  style="background-color: #BF360C;">
+  <!-- <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark"> -->
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" [routerLink]="['/home']" style="color:white">
+         Home
+        </a>
+        <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+          <span class="navbar-toggler-icon" style="color:white;"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a [routerLink]="['/home']">
+                  Home
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                      [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="col-6 collapse-close">
-            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link no-caret" data-toggle="dropdown" role="button" style="color:white">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text" style="color:white">Divisions</span>
+              </a>
+              <div class="dropdown-menu">
+                <a [routerLink]="['/home']" class="dropdown-item">FRBM</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Accounts</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Loan</a>
+                <a [routerLink]="['/home']" class="dropdown-item">FCD</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Budget</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Commercial Tax</a>
+                <a [routerLink]="['/home']" class="dropdown-item">State Lotteries</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Pension</a>
+                <a [routerLink]="['/home']" class="dropdown-item">GPF/GIS/CPF</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Internal Audit</a>
+                <a [routerLink]="['/home']" class="dropdown-item">LFA</a>
+              </div>
+            </li>
+    
+    
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link no-caret" data-toggle="dropdown" role="button" style="color:white">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text" style="color:white">Orders</span>
+              </a>
+              <div class="dropdown-menu">
+                <a [routerLink]="['/home']" class="dropdown-item">Letters</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Notifications</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Rules</a>
+                <a [routerLink]="['/home']" class="dropdown-item">D.A.</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Circulars</a>
+                <a [routerLink]="['/home']" class="dropdown-item">ACT</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Office Memo.</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Press Release</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Gazette</a>
+               
+              </div>
+            </li>
+    
+    
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link no-caret" data-toggle="dropdown" role="button" style="color:white">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text" style="color:white">Employees Corner</span>
+              </a>
+              <div class="dropdown-menu">
+                <a [routerLink]="['/home']" class="dropdown-item">Vacancies</a>
+                <a [routerLink]="['/home']" class="dropdown-item"> Transfer/Promotion</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Forms</a>
+                <a [routerLink]="['/home']" class="dropdown-item">Trainings</a>
+            
+               
+              </div>
+            </li>
+    
+    
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link no-caret" data-toggle="dropdown" role="button" style="color:white">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text" style="color:white">RTI</span>
+              </a>
+              <div class="dropdown-menu">
+                <a [routerLink]="['/home']" class="dropdown-item" style="color:white">Notification</a>
+                <a [routerLink]="['/home']" class="dropdown-item" style="color:white">ACT</a>
+               
+            
+               
+              </div>
+            </li>
+    
+    
+    
+            <li class="nav-item d-none d-lg-block ml-lg-4">
+              <a [routerLink]="['/home']"class="btn btn-neutral btn-icon">
+                 <span class="nav-link-inner--text">SIFMS </span>
+              </a>
+            </li>
+    
+            
+            <li class="nav-item d-none d-lg-block ml-lg-4">
+              <a [routerLink]="['/contact']" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon">
+                  <i class="fa fa-cloud-download mr-2"></i>
+                </span>
+                <span class="nav-link-inner--text">Contact Us</span>
+              </a>
+            </li>
+    
+    
+          </ul>
+         
         </div>
       </div>
-      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-      
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Divisions</span>
-          </a>
-          <div class="dropdown-menu">
-            <a [routerLink]="['/home']" class="dropdown-item">FRBM</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Accounts</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Loan</a>
-            <a [routerLink]="['/home']" class="dropdown-item">FCD</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Budget</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Commercial Tax</a>
-            <a [routerLink]="['/home']" class="dropdown-item">State Lotteries</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Pension</a>
-            <a [routerLink]="['/home']" class="dropdown-item">GPF/GIS/CPF</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Internal Audit</a>
-            <a [routerLink]="['/home']" class="dropdown-item">LFA</a>
-          </div>
-        </li>
+    </nav>
+    
 
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Orders</span>
-          </a>
-          <div class="dropdown-menu">
-            <a [routerLink]="['/home']" class="dropdown-item">Letters</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Notifications</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Rules</a>
-            <a [routerLink]="['/home']" class="dropdown-item">D.A.</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Circulars</a>
-            <a [routerLink]="['/home']" class="dropdown-item">ACT</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Office Memo.</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Press Release</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Gazette</a>
-           
-          </div>
-        </li>
-
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Employees Corner</span>
-          </a>
-          <div class="dropdown-menu">
-            <a [routerLink]="['/home']" class="dropdown-item">Vacancies</a>
-            <a [routerLink]="['/home']" class="dropdown-item"> Transfer/Promotion</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Forms</a>
-            <a [routerLink]="['/home']" class="dropdown-item">Trainings</a>
-        
-           
-          </div>
-        </li>
-
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">RTI</span>
-          </a>
-          <div class="dropdown-menu">
-            <a [routerLink]="['/home']" class="dropdown-item">Notification</a>
-            <a [routerLink]="['/home']" class="dropdown-item">ACT</a>
-           
-        
-           
-          </div>
-        </li>
-
-
-
-        <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a [routerLink]="['/home']"class="btn btn-neutral btn-icon">
-             <span class="nav-link-inner--text">SIFMS </span>
-          </a>
-        </li>
-
-        
-        <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a [routerLink]="['/contact']" class="btn btn-neutral btn-icon">
-            <span class="btn-inner--icon">
-              <i class="fa fa-cloud-download mr-2"></i>
-            </span>
-            <span class="nav-link-inner--text">Contact Us</span>
-          </a>
-        </li>
-
-
-      </ul>
-     
-    </div>
-  </div>
-</nav>
